@@ -20,7 +20,6 @@ prometheus-server:
   links:
     - cadvisor:cadvisor
     - metrics-gateway:metrics-gateway
-    - pushgateway:pushgateway
   volumes:
     - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
